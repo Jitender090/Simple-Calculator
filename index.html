@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="cal">
+            <h3>Calculator</h3>
+            <div id="icon">
+                <span id="moon-icon"><img src="./SVG/MoonIcon.svg" alt=""></span>
+                <span id="sun-icon"><img src="./SVG/SunIcon.svg" alt=""></span>
+            </div>
+
+        </div>
+        <div class="bar">
+            <div id="result">Result</div>
+            <button id="clear">C</button>
+        </div>
+        <div id="box">
+            <button class="sm" onclick="cal(1)">1</button>
+            <button class="sm" onclick="cal(2)">2 </button>
+            <button class="sm" onclick="cal(3)">3</button>
+            <button class="sm" onclick="sum('+')">+</button>
+            <button class="sm" onclick="cal(4)">4</button>
+            <button class="sm" onclick="cal(5)">5</button>
+            <button class="sm" onclick="cal(6)">6</button>
+            <button class="sm" onclick="sum('-')">-</button>
+            <button class="sm" onclick="cal(7)">7</button>
+            <button class="sm" onclick="cal(8)">8</button>
+            <button class="sm" onclick="cal(9)">9</button>
+            <button class="sm" onclick="sum('/')">/</button>
+            <button class="sm" id="zero" onclick="cal(0)">0</button>
+            <button class="sm" onclick="sum('*')">*</button>
+            <button class="sm" onclick="result()">=</button>
+
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+
+
+</html>
